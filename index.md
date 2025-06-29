@@ -10,7 +10,9 @@ Hi, I'm Vhyck Aquino(Vik), a passionate developer and designer.
 I specialize in **web development** using technologies like HTML, CSS, JavaScript, Java, and react.
 
 ## Projects
-- **Project 1**: Full stack App https://github.com/vhyck8888/missing-411-app
+- **Project 1**: [Missing 411 App](https://github.com/vhyck8888/missing-411-app)  
+  A full-stack web application that helps users track and report missing persons. Built with React, Node.js, and MongoDB.
+
 
 
 ## Contact
