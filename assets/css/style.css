@@ -1,153 +1,126 @@
-/* === CSS Variables === */
-:root {
-  --primary-color: #007ACC;
-  --accent-color: #FF6347;
-  --text-color: #333;
-  --bg-color: #F0F0F0;
-  --card-bg: #ffffff;
-  --font-family: 'Inter', sans-serif;
-}
-
-/* === Reset & Base Styles === */
+/* Reset and Global Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F0F0; /* Background color */
+    color: #333; /* Text color */
+    line-height: 1.6;
+    padding: 20px;
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-/* === Typography === */
+/* Header (Title, Subtitle) */
 h1, h2, h3 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+    color: #007ACC; /* Dark blue for headings */
+    margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem; /* Large font for main heading */
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem; /* Medium font for section headings */
 }
 
 h3 {
-  font-size: 1.75rem;
+    font-size: 1.75rem; /* Smaller font for sub-headings */
 }
 
-p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+/* Links */
+a {
+    color: #FF6347; /* Coral color for links */
+    text-decoration: none;
 }
 
-/* === Sections === */
-.section {
-  margin-bottom: 2rem;
-  padding: 1rem 0;
+a:hover {
+    color: #007ACC; /* Dark blue when hovering over links */
+    text-decoration: underline; /* Underline links on hover */
 }
 
-.section-title {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-/* === Project Cards === */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
+/* Cards (For Projects or Info) */
 .project-card {
-  background-color: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .project-card h3 {
-  font-size: 1.8rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-
-.project-card a {
-  color: var(--accent-color);
-  font-weight: bold;
-}
-
-.project-card a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-/* === Responsive Design === */
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
     font-size: 1.5rem;
-  }
+    color: #007ACC;
+}
 
-  .project-card {
-    padding: 1rem;
-  }
+/* About Me Section */
+#about-me {
+    margin-bottom: 2rem;
+}
 
-  .project-card h3 {
-    font-size: 1.2rem;
-  }
+#about-me h2 {
+    color: #007ACC;
+    font-size: 2rem;
+}
+
+#about-me p {
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 2rem;
+}
+
+#contact a {
+    color: #007ACC;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        margin: 1rem 0;
+        padding: 0.8rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 1.5rem;
-  }
+    body {
+        padding: 10px;
+    }
 
-  h2 {
-    font-size: 1.3rem;
-  }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-  .project-card h3 {
-    font-size: 1.5rem;
-  }
-
-  .project-card p {
-    font-size: 0.9rem;
-  }
+    h2 {
+        font-size: 1.3rem;
+    }
 }
