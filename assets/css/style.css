@@ -1,18 +1,3 @@
-/* Reset and Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F0F0F0; /* Background color */
-    color: #333; /* Text color */
-    line-height: 1.6;
-    padding: 20px;
-}
-
 /* Header (Title, Subtitle) */
 h1, h2, h3 {
     color: #007ACC; /* Dark blue for headings */
@@ -21,14 +6,12 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5rem; /* Large font for main heading */
+    margin-bottom: 0.5rem; /* Space between h1 and h2 */
 }
 
 h2 {
     font-size: 2rem; /* Medium font for section headings */
-}
-
-h3 {
-    font-size: 1.75rem; /* Smaller font for sub-headings */
+    margin-bottom: 1rem; /* Space below the h2 heading */
 }
 
 /* Links */
@@ -38,14 +21,14 @@ a {
 }
 
 a:hover {
-    color: #007ACC; /* Dark blue when hovering over links */
+    color: #005f73; /* Darker shade of coral */
     text-decoration: underline; /* Underline links on hover */
 }
 
-/* Cards (For Projects or Info) */
+/* Project Cards */
 .project-card {
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 1.5rem; /* Increased padding inside cards */
     margin: 1rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
