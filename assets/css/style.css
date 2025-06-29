@@ -3,11 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: none; /* Remove any borders */
-    outline: none; /* Remove outlines */
 }
 
-/* Body */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F0F0F0; /* Background color */
@@ -48,21 +45,43 @@ a:hover {
 /* Cards (For Projects or Info) */
 .project-card {
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 1.5rem;  /* Increased padding for more space */
     margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border-radius: 10px; /* Slightly round corners for a modern feel */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect */
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Slight lift when hovering */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
 }
 
+/* Title and Text Styling */
 .project-card h3 {
-    font-size: 1.5rem;
-    color: #007ACC;
+    font-size: 1.8rem;  /* Larger title */
+    color: #007ACC;    /* Dark blue for title */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+.project-card p {
+    font-size: 1rem; /* Smaller font size for description */
+    color: #555; /* Slightly lighter color for text */
+    line-height: 1.5;
+    margin-bottom: 1.5rem;  /* Space at the bottom of the paragraph */
+}
+
+/* Link inside the project card */
+.project-card a {
+    color: #FF6347;  /* Coral color for the links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #007ACC; /* Dark blue on hover */
+    text-decoration: underline;
 }
 
 /* About Me Section */
@@ -125,5 +144,17 @@ a:hover {
 
     h2 {
         font-size: 1.3rem;
+    }
+
+    .project-card {
+        padding: 1rem;  /* Less padding on smaller screens */
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    .project-card p {
+        font-size: 0.9rem; /* Smaller description text */
     }
 }
