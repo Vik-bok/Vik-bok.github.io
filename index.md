@@ -3,6 +3,10 @@ layout: default
 title: Home
 ---
 
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+
 # Welcome to My Portfolio 👋
 Hi, I'm Vhyck Aquino (Vik), a passionate developer and designer.
 
@@ -21,7 +25,5 @@ When I'm not coding, I’m also into layout design and making sure the projects 
   A full-stack web application that helps users track and report missing persons. Built with React, Node.js, and MongoDB.
 
 ## Contact
-## Contact
 📫 Feel free to reach out at [vikddquino@gmail.com]  
 🔗 Check out my projects on [GitHub](https://github.com/Vik-bok)
-
