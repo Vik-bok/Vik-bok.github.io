@@ -1,25 +1,126 @@
-/* Custom Styles for Portfolio */
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Body */
 body {
-    background-color: #F0F0F0;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F0F0; /* Background color */
+    color: #333; /* Text color */
+    line-height: 1.6;
+    padding: 20px;
 }
 
 /* Header (Title, Subtitle) */
 h1, h2, h3 {
-    color: #007ACC; /* Primary color */
+    color: #007ACC; /* Dark blue for headings */
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem; /* Large font for main heading */
+}
+
+h2 {
+    font-size: 2rem; /* Medium font for section headings */
+}
+
+h3 {
+    font-size: 1.75rem; /* Smaller font for sub-headings */
 }
 
 /* Links */
 a {
-    color: #FF6347; /* Secondary color */
+    color: #FF6347; /* Coral color for links */
     text-decoration: none;
 }
 
 a:hover {
-    color: #007ACC; /* On hover, switch to primary color */
+    color: #007ACC; /* Dark blue when hovering over links */
+    text-decoration: underline; /* Underline links on hover */
 }
 
-/* Add more custom styles here */
+/* Cards (For Projects or Info) */
+.project-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #007ACC;
+}
+
+/* About Me Section */
+#about-me {
+    margin-bottom: 2rem;
+}
+
+#about-me h2 {
+    color: #007ACC;
+    font-size: 2rem;
+}
+
+#about-me p {
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 2rem;
+}
+
+#contact a {
+    color: #007ACC;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        margin: 1rem 0;
+        padding: 0.8rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
