@@ -1,0 +1,25 @@
+/* Custom Styles for Portfolio */
+
+/* Body */
+body {
+    background-color: #F0F0F0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header (Title, Subtitle) */
+h1, h2, h3 {
+    color: #007ACC; /* Primary color */
+}
+
+/* Links */
+a {
+    color: #FF6347; /* Secondary color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007ACC; /* On hover, switch to primary color */
+}
+
+/* Add more custom styles here */
