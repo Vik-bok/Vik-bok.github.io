@@ -21,4 +21,7 @@ When I'm not coding, I’m also into layout design and making sure the projects 
   A full-stack web application that helps users track and report missing persons. Built with React, Node.js, and MongoDB.
 
 ## Contact
-📫 Feel free to reach out at [vikddquino@gmail.com]
+## Contact
+📫 Feel free to reach out at [vikddquino@gmail.com]  
+🔗 Check out my projects on [GitHub](https://github.com/Vik-bok)
+
