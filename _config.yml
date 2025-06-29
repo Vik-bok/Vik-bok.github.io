@@ -1,3 +1,8 @@
 theme: minima
 title: Vhyck Aquino Portfolio
 description: My personal site
+color:
+  primary: "#007ACC"  # Custom blue color for primary buttons or headers
+  secondary: "#FF6347"  # Secondary color (e.g., for links or highlights)
+  background: "#F0F0F0"  # Light background color
+  text: "#333"  # Text color
